@@ -32,12 +32,18 @@ class Grid:
                 Dock.append((RC, Value))
                 print(("%s%d" % (col, row)), end=" ")
             print()
+        # one = Dock.index("A1")
+        print(Dock)
+        
 
 Cardds = Cards()
 Cardds.CardSetup()
 
 GridS = Grid(Cardds)
 GridS.GridSetup()
+
+GridS.Dock.index("A1")
+
 
 # x = 0
 # while(x < 3):

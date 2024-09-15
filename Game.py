@@ -32,9 +32,24 @@ class Grid:
                 Dock.append((RC, Value))
                 print(("%s%d" % (col, row)), end=" ")
             print()
-        # one = Dock.index("A1")
         print(Dock)
         
+    
+    def FindGrid(GridNum,Dock):
+        for GridNum in Dock:
+            if len(GridNum) == 2:
+                return GridNum
+            return " "
+        # def FindGrid(Dock):
+        #     for A1 in Dock:
+        #         if len(A1) == 2:
+        #             return A1
+        #         return " "
+     
+        # # one = Dock.index("A1")
+        # print(FindGrid(Dock))
+    
+
 
 Cardds = Cards()
 Cardds.CardSetup()
@@ -42,7 +57,11 @@ Cardds.CardSetup()
 GridS = Grid(Cardds)
 GridS.GridSetup()
 
-GridS.Dock.index("A1")
+while(True):
+    GridS.FindGrid()
+
+
+# GridS.Dock.index("A1")
 
 
 # x = 0
